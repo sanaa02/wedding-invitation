@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariage de Abderaouf</title>
+  <meta name="theme-color" content="#b3873a">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;600&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div>
+      <div class="loader-ring"></div>
+      <h2>Mariage de Abderaouf</h2>
+      <p style="font-family: sans-serif; font-size: 0.8rem; color: #aaa;">Chargement de l'invitation...</p>
+    </div>
+  </div>
+
+  <!-- ENVELOPE COVER -->
+  <section id="cover">
+    <div class="envelope-wrapper" onclick="openInvitation()">
+      <div class="envelope">
+        <div class="wax-seal">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="letter">
+          <h2>Mariage de Abderaouf</h2>
+          <p>Cliquez pour ouvrir</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVITATION MAIN CONTENT -->
+  <div id="invitation">
+    <section id="hero">
+      <div class="hero-overlay"></div>
+      <!-- Hero Background Image -->
+      <img class="hero-image" src="https://images.unsplash.com/photo-1549290832-6b3a3ab2e117?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wedding Background">
+      
+      <div class="hero-content">
+        
+        <!-- Couple Picture Frame -->
+        <div class="couple-frame">
+          <img src="https://images.unsplash.com/photo-1549290832-6b3a3ab2e117?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Abderaouf wedding" class="couple-img">
+        </div>
+
+        <h4>Invitation au mariage</h4>
+        <h1>Mariage de Abderaouf</h1>
+        <p>C’est avec une immense joie que nous vous invitons à partager avec nous cette journée inoubliable.</p>
+        <h2>Samedi • 29 août 2026</h2>
+
+        <!-- Countdown -->
+        <div id="countdown">
+          <div class="count-box"><span id="days">00</span><p>Jours</p></div>
+          <div class="count-box"><span id="hours">00</span><p>Heures</p></div>
+          <div class="count-box"><span id="mins">00</span><p>Minutes</p></div>
+          <div class="count-box"><span id="secs">00</span><p>Secondes</p></div>
+        </div>
+
+        <!-- Arabic Card Details -->
+        <div class="arabic-card">
+          <h2>تتشرف عائلة تيكودان جمال ( رحمه الله )</h2>
+          <h1>حفل زفاف ابنهم البار عبد الرؤوف تيكودان</h1>
+          <p>وَاللَّهُ جَعَلَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا وَجَعَلَ لَكُم مِّنْ أَزْوَاجِكُم بَنِينَ وَحَفَدَةً وَرَزَقَكُم مِّنَ الطَّيِّبَاتِ أَفَبِالْبَاطِلِ يُؤْمِنُونَ وَبِنِعْمَتِ اللَّهِ هُمْ يَكْفُرُونَ</p>
+          <!-- Venue Photo Showcase -->
+          <div class="venue-card">
+            <img src="images/wedding.jpeg" alt="قاعة الحفلات جنان الباي" class="venue-img">
+            <div class="venue-badge">قاعة الحفلات جنان الباي</div>
+          </div>
+
+          <div class="arabic-details">
+            <p>📍 <strong>المكـــــان :</strong> قاعة الحفلات جنان الباي - قرية السنافر - طريق القلتة الزرقاء</p>
+            <p>📅 <strong>الزمـــــان :</strong> السبت 29 أوت 2026</p>
+            <p class="arabic-welcome">حضوركم يشرفنا ✨</p>
+          </div>
+        </div>
+
+        <!-- Google Maps Button -->
+        <a href="https://maps.app.goo.gl/4ZGsRohZYXkAfawy5?g_st=ic" target="_blank" rel="noopener noreferrer" class="gold-btn">
+          📍 Open Google Maps
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <!-- BACKGROUND AUDIO SONG -->
+  <audio id="music" loop preload="auto">
+    <source src="for_the_rest_of_my_life.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Audio Toggle Button -->
+  <button class="music-btn" onclick="toggleMusic()" aria-label="Play or Pause Music">
+    <i class="fa-solid fa-music"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
